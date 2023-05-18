@@ -1,10 +1,10 @@
 from urllib.parse import urlparse
 def parse(query: str) -> dict:
-    queries = {}
+    querys = {}
     for item in urlparse(query).query.split('&'):
         if item:
-            queries[item.split('=')[0]] = item.split('=')[1]
-    return queries
+            querys[item.split('=')[0]] = item.split('=')[1]
+    return querys
 
 
 if __name__ == '__main__':
