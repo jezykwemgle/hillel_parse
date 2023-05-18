@@ -13,7 +13,7 @@ if __name__ == '__main__':
     assert parse('http://example.com/') == {}
     assert parse('http://example.com/?') == {}
     assert parse('http://example.com/?name=Dima') == {'name': 'Dima'}
-
+    ###
     assert parse('http://example.com/name=') == {}
     assert parse('http://example.com/about.html') == {}
     assert parse('http://example.com/path/to/page?имя=дима&возраст=20') == {'имя': 'дима', 'возраст': '20'}
